@@ -44,7 +44,7 @@ nav a {
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: url('original_2.jpeg') center center / cover no-repeat;
+    background: url("original_2.jpeg") center center / cover no-repeat;
     color: #000000;
     animation: fadeIn 2s ease-in-out;
     margin: 0;
@@ -189,7 +189,7 @@ nav a {
 .subscription {
     padding: 20px;
     text-align: center;
-    background: url('subscription-background.jpg') center center / cover no-repeat;
+    background: url("subscription-background.jpg") center center / cover no-repeat;
 }
 
 .subscription h2 {
