@@ -115,15 +115,15 @@ nav a {
 .features {
     position: relative;
     z-index: 1; /* Assure que les fonctionnalités sont au-dessus de l'image */
-    padding: 550px 0; /* Augmenter cette valeur pour descendre les carrés */
+    padding: 100px 0; /* Réduire cette valeur pour remonter les carrés */
 }
 
 .features-wrapper {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
     padding: 20px 0;
+    flex-wrap: nowrap; /* Assurez-vous que les éléments ne se replient pas sur la ligne suivante */
 }
 
 .feature {
@@ -170,13 +170,13 @@ nav a {
 .gifs-wrapper {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: nowrap; /* Assurez-vous que les éléments ne se replient pas sur la ligne suivante */
 }
 
 .gif-square {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px; /* Assurez-vous que les carrés sont bien proportionnés */
     background-color: #ffffff;
     border-radius: 20px;
     display: flex;
@@ -184,20 +184,27 @@ nav a {
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 0; /* Assurez-vous qu'il n'y a pas de padding */
+}
+
+.gif-square a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .gif-square img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Fait en sorte que l'image couvre entièrement le carré sans déformation */
 }
 
 /* Section des abonnements */
 .subscription {
-    padding: 60px 0; /* Ajuster cette valeur pour descendre le tableau */
+    padding: 10px 0; /* Ajuster cette valeur pour descendre la section */
     text-align: center;
     background: url("subscription-background.jpg") center center / cover no-repeat;
-    margin-top: -490px; /* Augmenter cette valeur pour descendre la section */
+    margin-top: 0px; /* Augmenter cette valeur pour descendre la section */
 }
 
 .subscription h2 {
@@ -207,7 +214,7 @@ nav a {
 
 /* Styles améliorés pour le tableau d'abonnement */
 .subscription-table {
-    margin: 100px auto; /* Augmenter cette valeur pour descendre le tableau */
+    margin: 20px auto; /* Réduire cette valeur pour remonter le tableau */
     max-width: 1000px;
     width: 100%;
     background-color: #fff;
@@ -286,10 +293,9 @@ nav a {
 footer {
     background-color: #129281;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+   
 
+}
 /* Media Queries */
 @media (max-width: 1200px) {
     .hero {
